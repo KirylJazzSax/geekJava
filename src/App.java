@@ -2,9 +2,6 @@ import exceptions.MyArrayDataException;
 import exceptions.MyArraySizeException;
 import utils.MatrixUtil;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class App {
     public static void main(String[] args) {
         String[][] matrix = {
