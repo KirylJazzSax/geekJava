@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<fx:root type="sample.messages.Messages" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <VBox fx:id="messages" spacing="2" alignment="BOTTOM_RIGHT" />
+        <HBox GridPane.columnIndex="0"
+              GridPane.rowIndex="1">
+            <TextField onKeyPressed="#textFieldEvent" fx:id="messageField" />
+            <Button onAction="#sendMessage" minWidth="50" text="send" />
+        </HBox>
+    </children>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="90" />
+        <RowConstraints percentHeight="10" />
+    </rowConstraints>
+</fx:root>
